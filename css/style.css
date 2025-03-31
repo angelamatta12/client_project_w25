@@ -88,9 +88,14 @@ footer {
     color: #FFCB05; 
     text-align: center;
     padding: 1em 0;
+  
+
+}
+
+.grid-footer {
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
 }
 
 footer a {
@@ -219,3 +224,219 @@ main a:hover, main a:focus {
 .homepage-list{
     font-size: 0.85em;
 }
+
+/*contact us form styling*/
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.contact-form label {
+    margin:1em;
+    font-weight: bold;
+}   
+
+.contact-form input {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #00274C;
+    border-radius: 5px;
+}
+
+.contact-form input[type="text"] {
+width:45%;
+position:relative;
+left:25%;
+}
+
+
+.contact-form textarea {
+    width:50%;
+    height: 100px;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #00274C;
+    border-radius: 5px;
+}
+
+
+.contact-form input[type="submit"] {
+    background-color: #FFCB05;
+    color: #00274C;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+
+}
+
+.contact-form input[type="submit"]:hover, .contact-form input[type="submit"]:focus {
+    background-color: #00274C;
+    color: #FFCB05;
+    border: 1px solid #FFCB05;
+}
+
+.form-label-group{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.form-message-group{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+/*the part of the console where I can see how my options for flex affects the styling was my bestie for this, literally had a winner within
+2 seconds, so glad Jackie pointed it out to me I think either during grid or one of the first class projects :) */
+}
+
+.contact-form-heading{
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+/*404 page styling*/
+.error-message{
+    font-size: 20px;
+    text-align: center;
+}
+
+.everday-intro-message{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+/*note, I used the bar underneath where you can resize the width and height to get this pixel width as a 
+starting point. apparently if you click on the boxes you can get the standard size for phone, tablet, laptop, large laptop and 4K :) */
+@media (min-width: 1024px) {
+
+    nav ul li {
+        font-size: 1.25em;
+    }
+    
+    footer p{
+        font-size: 1.15em;
+    }
+
+    footer .social-media a {
+        font-size: 1.15em;
+    }
+
+    .contact-form-heading{
+        font-size: 1.3em;
+    }
+
+    .contact-form label{
+        font-size: 1.1em;
+    }
+
+    .form-label-group {
+        display: grid;
+        grid-template-rows: 1fr 1.1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-form input[type="submit"] {
+        font-size: 1.33em;
+    }
+
+    main h2 {
+        font-size: 1.35em;
+    }
+
+    main  h3{
+
+        font-size: 1.25em;
+    }
+
+    main  h4{
+
+        font-size: 1.2em;
+    }
+    main  h5{
+
+        font-size: 1.17em;
+    }
+
+    main  p {
+
+        font-size: 1.15em;
+    }
+
+    main ul, main ol{
+        font-size: 1.1em;
+    }
+
+    
+
+    /* home page styling*/
+
+    .student-support-grid li {
+        border: navy solid 5px;
+        width:auto;
+    }
+
+    .student-outside-list {
+        font-size: 1.15em;
+    }
+
+    .title{
+        font-size: 1.15em;
+
+    }
+
+    .banner .banner-text {
+
+        font-size: 1.83em;
+    }
+
+    .homepage-list {
+        font-size: 1em;
+    }
+
+    /*First Gen page styling*/
+    /* Image grid */
+
+    .image-grid p{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .image-grid div{
+        border: navy solid 5px;
+        width: auto;
+    }
+
+    .centered-image p{
+        margin-bottom: 0;
+        margin-top:1em;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .centered-image img {
+        border: navy solid 5px;
+        padding: 3%;
+        width: auto;
+    }
+
+    .first-gen-message{
+        margin-top: 1em;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    /*Everday Resources styling*/
+    .everday-intro-message{
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+}
+
+
+
