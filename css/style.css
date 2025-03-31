@@ -82,6 +82,14 @@ nav ul li a:hover, nav ul li a:focus {
     color: #00274C;
 }
 
+
+.current-page{
+    background-color: #FFCB05;
+    color: #00274C;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
 /*footer styling*/
 footer {
     background-color: #00274C;
